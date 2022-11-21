@@ -39,7 +39,7 @@
     "postpublish": "del ./package",
     "emitDeclarations": "tsc --emitDeclarationOnly",
     "build": "rollup -c && pnpm emitDeclarations",
-    "start:storybook": "start-storybook -p 6006 --ci",
+    "start:storybook": "node api.js && start-storybook -p 6006 --ci",
     "build:storybook": "del ./storybook-static; NODE_ENV=production build-storybook",
     "test:lint": "eslint \"src/**/*.{ts,tsx}\" \"stories/**/*.{ts,tsx}\" \"sandboxes/**/*.{ts,tsx}\" \"test/**/*.{ts,tsx}\"",
     "test:unit": "vitest run --coverage",

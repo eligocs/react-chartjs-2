@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "start": "vite"
+    "start": "node api.js && vite"
   },
   "dependencies": {
     "chart.js": "^4.0.0",
